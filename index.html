@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodworth AI Social Content Hub</title>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for quick setup (in a real project, you'd build it) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS to ensure Inter font is applied and basic body styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* Applying Tailwind's background and text colors directly for consistency */
+            @apply bg-gray-50 text-gray-800 dark:bg-gray-950 dark:text-gray-200;
+        }
+        #root {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Basic dark mode toggle for demonstration, though Tailwind handles most of it */
+        /* You might use a state management solution or a dedicated dark mode toggle in React */
+        html.dark body {
+            background-color: #111827;
+            color: #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- The main entry point for the React application -->
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
